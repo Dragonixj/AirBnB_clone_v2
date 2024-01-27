@@ -23,7 +23,7 @@ def hbnb():
 @app.route("/c/<string:text>", strict_slashes=False)
 def c_text(text):
     """Displays C"""
-    text = text.replace("_", "")
+    text = text.replace("_", " ")
     return f"C {text}"
 
 
